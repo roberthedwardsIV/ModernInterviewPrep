@@ -36,9 +36,14 @@ export default function Header({ initialUser }) {
     signOut();
   };
 
-  const handleSignIn = (event) => {
+  const handleGoogleSignIn = (event) => {
     event.preventDefault();
     signInWithGoogle();
+  };
+
+  const handleEmailSignIn = (event) => {
+    event.preventDefault();
+    signInWithEmail();
   };
 
   return (
@@ -81,10 +86,11 @@ export default function Header({ initialUser }) {
         </>
       ) : (
         <div className="profile">
-          <a href="#" onClick={handleSignIn}>
+          <a href="#" onClick={handleGoogleSignIn}>
             <img src="/profile.svg" alt="A placeholder user image" />
             Sign In with Google
           </a>
+          <a href="#" onClick={handleEmailSignIn}>Sign In with Email</a>
         </div>
       )}
     </header>
