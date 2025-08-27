@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import Link from "next/link";
 import {
   signInWithGoogle,
-  signInWithGoogle,
+  signInWithEmail,
   signOut,
   onIdTokenChanged,
 } from "@/src/lib/firebase/auth.js";
