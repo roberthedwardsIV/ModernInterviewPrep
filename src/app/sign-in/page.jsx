@@ -1,9 +1,5 @@
-import {
-    getAuthenticatedAppForUser,
-    getAuthenticatedAppForUser as getUser,
-} from "@/src/lib/firebase/serverApp.js";
-import { SignIn } from "@/src/components/SignIn.jsx";
-import { getFirestore } from "firebase/firestore";
+import SignIn from "@/src/components/Signin.jsx";
+
 
 export default async function signIn() {
   
@@ -11,6 +7,7 @@ export default async function signIn() {
     <main className="main__signIn">
         <div>
             <h2>Sign-In Page Added Successfully</h2>
+            <SignIn />
         </div>
     </main>
   );
