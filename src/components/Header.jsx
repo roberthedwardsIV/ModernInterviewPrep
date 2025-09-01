@@ -91,7 +91,7 @@ export default function Header({ initialUser }) {
             <img src="/profile.svg" alt="A placeholder user image" />
             Sign In with Google
           </a>
-          <a href="#" onClick={handleEmailSignIn}>Sign In with Email</a>
+          <a href="/sign-in">Sign In with Email</a>
         </div>
       )}
     </header>
