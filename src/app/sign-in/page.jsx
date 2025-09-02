@@ -1,7 +1,7 @@
 import SignIn from "@/src/components/Signin.jsx";
 
 
-export default async function signIn() {
+export default async function Home() {
   
   return (
     <main className="main__signIn">
